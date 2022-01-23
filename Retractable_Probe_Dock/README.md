@@ -183,7 +183,7 @@ initial_angle: 175
 * Attach the servo to the servo port on your MCU. For example, on a SKR 1.4 Turbo, the servo port is the one inside the orange box shown in the picture below. 
 <table>
   <tr>
-    <td>
+    <td width="50%">
 <img src="Images/SKR_1.4.jpg" width="400">
   </td>
   <td>
