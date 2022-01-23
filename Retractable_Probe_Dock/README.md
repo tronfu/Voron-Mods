@@ -18,8 +18,8 @@ Below is a comparison of the servo brush vs. the stock fix brush.
 <figcaption align="center">Nozzle after cleaning with the servo brush</figcaption>
 </figure>
 
-&nbsp;
-&nbsp;
+&nbsp;<br/>
+&nbsp;<br/>
 You can certainly choose to use this design for only the Klick probe dock or only the nozzle brush by skipping the parts and assembly for the respective functionality. 
 
 
