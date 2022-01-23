@@ -218,6 +218,7 @@ variable_docklocation_z:        9     # Z dock position (-128 for a gantry mount
 #### Skip the following steps if you are not using the nozzle brush feature
 * Do an extend_probe_dock
 * Move the nozzle until the x is at the brush start and y is at brush_front
+```
                   ←   brush_width   →                            
                    _________________                                                          ↑                 |                 |  ↑                     
   brush_start (x) |                 | brush_depth            
@@ -226,6 +227,8 @@ variable_docklocation_z:        9     # Z dock position (-128 for a gantry mount
 ↓                      brush_front
  __________________________________________________________
                      PRINTER FRONT
+```
+
 * Do a GET_POSITION and update retractable_probe_dock.cfg (see example setup below)
 ```
 variable_brush_front:       340          
