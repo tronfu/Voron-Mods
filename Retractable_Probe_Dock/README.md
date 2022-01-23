@@ -76,7 +76,7 @@ Nozzle brush:
 [include z_calibration.cfg]
 ```
 
-* Add the following to your printer.cfg.
+* Add the following servo section to your printer.cfg.
 
 ```
 [servo probe_dock_servo]
@@ -101,7 +101,8 @@ initial_angle: 175
 #   is only valid if initial_angle is not set.) The default is to not
 #   send any signal at startup.
 ```
-* Add extend_probe_dock and retract_probe_dock commands to attach_probe and dock_probe macros in your klicky-probe.cfg. See example below for where to insert.
+* Add extend_probe_dock and retract_probe_dock commands to attach_probe and dock_probe macros in your klicky-probe.cfg. See example below for where to insert. You can find a copy of my klicky-probe.cfg in the Macros folder for additional reference.
+
 ```
 [gcode_macro Attach_Probe]
 
