@@ -1,5 +1,7 @@
 # A Servo-powered Retractable Dock for Klicky Probe and Nozzle Brush
 
+<img src="Images/servo_dock_and_brush.jpg">
+
 ## Background
 
 I was not quite content with how the fixed nozzle worked. The back and forth motion of the nozzle either did not get the plastic bits off or got them off in one direction but picked them back up on the way back. Also, while I really like the Klicky probe, I had trouble consistently docking and undocking with the fixed Klicky probe dock on my Voron 2.4 350. Docking and undocking would work for a few print cycles then dock became slightly too far back for the toolhead to reach. So I created this servo-powered retractable dock and nozzle brush combo.
