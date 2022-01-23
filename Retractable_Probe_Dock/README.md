@@ -192,6 +192,7 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
   </td>
   </tr>
 </table>
+
 * Crimp the MicroFit3 Connector Receptacle onto the wires from mcu.
 * Cut off the existing connector on the servo.
 * Crimp the MicroFit3 Connector Plug onto the servo wires.
