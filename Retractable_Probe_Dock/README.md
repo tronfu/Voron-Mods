@@ -4,9 +4,19 @@
 
 I was not quite content with how the fixed nozzle worked. The back and forth motion of the nozzle either did not get the plastic bits off or got them off in one direction but picked them back up on the way back. Also, while I really like the Klicky probe, I had trouble consistently docking and undocking with the fixed Klicky probe dock on my Voron 2.4 350. Docking and undocking would work for a few print cycles then dock became slightly too far back for the toolhead to reach. So I created this servo-powered retractable dock and nozzle brush combo.
 
-[![IMAGE ALT TEXT](https://img.youtube.com/vi/YPCdNe6Fr9E/0.jpg)](http://www.youtube.com/watch?v=YPCdNe6Fr9E "Servo-powered Nozzle Brush")
+<table>
+  <tr>
+    <td>
+       [![IMAGE "Servo-powered Nozzle Brush"](https://img.youtube.com/vi/YPCdNe6Fr9E/0.jpg)](http://www.youtube.com/watch?v=YPCdNe6Fr9E "Servo-powered Nozzle Brush")
+    </td>
+    <td>
+       [![IMAGE "Servo-powered Klicky Dock"](https://img.youtube.com/vi/sshtEy6dz7o/0.jpg)](http://www.youtube.com/watch?v=sshtEy6dz7o "Servo-powered Klicky Dock")
+    </td>
+  </tr>
+</table>
 
-[![IMAGE ALT TEXT](https://img.youtube.com/vi/sshtEy6dz7o/0.jpg)](http://www.youtube.com/watch?v=sshtEy6dz7o "Servo-powered Klicky Dock")
+
+
 
 Below is a comparison of the servo brush vs. the stock fix brush.
 <table>
@@ -14,12 +24,14 @@ Below is a comparison of the servo brush vs. the stock fix brush.
     <td>
   <figure>
   <img src="Images/nozzle_fixed_brush.jpg" width="200">
+  &nbsp;<br/>
   <figcaption align="center">Nozzle after cleaning with fixed brush</figcaption>
   </figure>
   </td>
   <td>
   <figure>
   <img src="Images/nozzle_servo_brush.jpg" width="200">
+  &nbsp;<br/>
   <figcaption align="center">Nozzle after cleaning with the servo brush</figcaption>
   </figure>
   </td>
