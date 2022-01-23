@@ -200,11 +200,13 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
 ### Install the nozzle brush (skip if you are not using the Klicky probe dock feature)
 * Heat set the two heat inserts.
 <img src="Images/install_heat_inserts.jpg" width="400">
+
 * Install the probe dock using the two M3 screws (the same ones for the stock dock mount).
 
 ### Install the nozzle brush (skip if you are not using the nozzle brush feature)
 * Trim the nozzle brush so that it fits in the holder.
 <img src="Images/trim_brush.jpg" width="400">
+
 * Insert the trimmed brush into the holder.
 <img src="Images/install_brush.jpg" width="400">
 <img src="Images/servo_arm_with_brush.jpg" width="400">
@@ -212,8 +214,10 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
 ### Final assembly
 * Install the servo into the housing using the two self-threading screws that come with the servo.
 <img src="Images/install_servo.jpg" width="400">
+
 * Install the impact shield by pushing it all the way into the housing.
 <img src="Images/install_impact_shield.jpg" width="400">
+
 * Put the two spring T-nuts in the extrusion and mount the housing to the extrusion (about 40 mm from the print bed on a V2.4 350). Don't tighten them too much. We will want to adjust the distance from the housing to the edge of the print bed.
 * Connect the servo to the wires from the MCU.
 * Power on the printer. If you have correctly inserted [servo probe_dock_servo] section into your printer.cfg, you should see the servo moving to the initial angle (e.g., 175 deg. in the sample setup) position up on boot up.
