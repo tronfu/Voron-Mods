@@ -225,6 +225,7 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
 (You should hear some clicking sound but the servo gear may not spin because it is at its initial angle position.)
 * Attach the white plastic wing that came with the servo to the top of the servo. You can just press it down but don't need to screw it in yet.
 <img src="Images/install_housing.jpg" width="400">
+
 * Put the dock adaptor arm over the white plastic wing, and secure the arm using a M2 6mm machine screw.
 <img src="Images/fully_installed.jpg" width="400">
 
