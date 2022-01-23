@@ -9,16 +9,22 @@ I was not quite content with how the fixed nozzle worked. The back and forth mot
 [![IMAGE ALT TEXT](https://img.youtube.com/vi/sshtEy6dz7o/0.jpg)](http://www.youtube.com/watch?v=sshtEy6dz7o "Servo-powered Klicky Dock")
 
 Below is a comparison of the servo brush vs. the stock fix brush.
-<p float="left">
+<table>
+  <tr>
+    <td>
   <figure>
   <img src="Images/nozzle_fixed_brush.jpg" width="200">
   <figcaption align="center">Nozzle after cleaning with fixed brush</figcaption>
   </figure>
+  </td>
+  <td>
   <figure>
   <img src="Images/nozzle_servo_brush.jpg" width="200">
   <figcaption align="center">Nozzle after cleaning with the servo brush</figcaption>
   </figure>
-</p>
+  </td>
+  </tr>
+</table>
 &nbsp;<br/>
 &nbsp;<br/>
 You can certainly choose to use this design for only the Klick probe dock or only the nozzle brush by skipping the parts and assembly for the respective functionality. 
