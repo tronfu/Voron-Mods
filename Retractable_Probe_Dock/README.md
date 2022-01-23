@@ -7,10 +7,10 @@ I was not quite content with how the fixed nozzle worked. The back and forth mot
 <table>
   <tr>
     <td>
-       [![IMAGE "Servo-powered Nozzle Brush"](https://img.youtube.com/vi/YPCdNe6Fr9E/0.jpg)](http://www.youtube.com/watch?v=YPCdNe6Fr9E "Servo-powered Nozzle Brush")
+       <a href="http://www.youtube.com/watch?v=YPCdNe6Fr9E" title="Servo-powered Nozzle Brush"><img src="https://img.youtube.com/vi/YPCdNe6Fr9E/0.jpg"></a>
     </td>
     <td>
-       [![IMAGE "Servo-powered Klicky Dock"](https://img.youtube.com/vi/sshtEy6dz7o/0.jpg)](http://www.youtube.com/watch?v=sshtEy6dz7o "Servo-powered Klicky Dock")
+      <a href="http://www.youtube.com/watch?v=sshtEy6dz7o" title="Servo-powered Klicky Dock"><img src="https://img.youtube.com/vi/sshtEy6dz7o/0.jpg"></a>
     </td>
   </tr>
 </table>
