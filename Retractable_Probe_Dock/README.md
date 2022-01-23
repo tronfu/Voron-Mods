@@ -10,15 +10,13 @@ I was not quite content with how the fixed nozzle worked. The back and forth mot
 
 Below is a comparison of the servo brush vs. the stock fix brush.
 <figure>
-<img src="/Images/nozzle_fixed_brush.jpg" width="200">
+<img src="Images/nozzle_fixed_brush.jpg" width="200">
 <figcaption align="center">Nozzle after cleaning with fixed brush</figcaption>
 </figure>
 <figure>
-<img src="/Images/nozzle_servo_brush.jpg" width="200">
+<img src="Images/nozzle_servo_brush.jpg" width="200">
 <figcaption align="center">Nozzle after cleaning with the servo brush</figcaption>
 </figure>
-
-
 
 You can certainly choose to use this design for only the Klick probe dock or only the nozzle brush by skipping the parts and assembly for the respective functionality. 
 
