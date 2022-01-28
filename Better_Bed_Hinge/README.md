@@ -109,9 +109,7 @@ This is best done on an ABS panel unless you know how to work with acrylic. You 
 **NOTE**
 
 You may need to use a drill and a 5.5mm drill bit to widen the ball-joint plate to allow an M5 screw to fit through.
-<img src="Images/strut_mount_hole_drilling.jpg" width="200">
-&nbsp;<br/>
-&nbsp;<br/>
+![strut ball joint drilling](Images/strut_mount_hole_drilling.jpg)
 ---
 
 * Install the strut front ball-joints to the bed extrusions. Leave the screws loose for now.
@@ -142,8 +140,6 @@ You may need to use a drill and a 5.5mm drill bit to widen the ball-joint plate 
 * Attach the struts to the front and back ball joints.
 * Lift the bed to the height you want and tighten the screw that hold the front ball-joints to the bed extrusions.
 * Attach the bed handle.
-<img src="Images/bed_handle_pre_assembly.jpg" width="400">
-<img src="Images/bed_handle_post_assembly.jpg" width="400">
 <table>
   <tr>
     <td>
