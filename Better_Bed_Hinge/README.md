@@ -4,12 +4,12 @@
 
 ## Background
 
-This is based on [xbst's excellent Bed Hinge design](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/xbst_/Bed_Hinge). I have made the following improvements:
+This is based on [xbst's excellent Bed Hinge ](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/xbst_/Bed_Hinge) design. I have made the following improvements:
 
-* Minimum change from the stock such that the two bed extrusions lay flat directly on frame extrusion using two stock OpenBuilds angle corner connectors.
-* Works with existing stock ABS deck panel with some cutting.
+* Minimum change from the stock bed mount such that the two bed extrusions lay flat directly on frame extrusion using the two stock OpenBuilds angle corner connectors.
+* Works with existing stock ABS deck panel with some relatively easy trimming.
 * The deck panel is attached to the hinges such that it moves up and down with the bed.
-* Easier mounting of the struts.
+* Easier mounting process of the struts.
 * Stronger 100 N struts.
 
 One nice thing about this version of the hinged bed is that the bed sits exactly the same in relation to the frame extrusions as the stock design. Now that I have this mod installed, I can;t imagine going back to flipping the printer on the side to work on the electronics.
@@ -38,7 +38,7 @@ One nice thing about this version of the hinged bed is that the bed sits exactly
 * 24 x M5 Spring T-nuts (8 for mounting the two DIN rails, 4 for mounting the extrusion spacer; 4 for mounting the strut ball-joints to the back frame extrusion; 4 for mounting the strut front ball-joints to the two bed extrusions; 4 for mounting the deck panel to the bed extrusions)
 * 2 x M5 lock nuts (for mounting the strut back ball-joints to the joint plate, regular nuts should work as well)
 
-You will need to 3D print the following from [xbst's Bed Hinge github] (https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/xbst_/Bed_Hinge/STLs):
+You will need to 3D print the following from [xbst's Bed Hinge github](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/xbst_/Bed_Hinge/STLs):
 * Extrusion_Spacer.stl
 * Din_Rail_Mount.stl
 
@@ -110,6 +110,8 @@ This is best done on an ABS panel unless you know how to work with acrylic. You 
 
 You may need to use a drill and a 5.5mm drill bit to widen the ball-joint plate to allow an M5 screw to fit through.
 <img src="Images/strut_mount_hole_drilling.jpg" width="200">
+&nbsp;<br/>
+&nbsp;<br/>
 ---
 
 * Install the strut front ball-joints to the bed extrusions. Leave the screws loose for now.
