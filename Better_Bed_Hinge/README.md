@@ -38,9 +38,8 @@ One nice thing about this version of the hinged bed is that the bed sits exactly
 * 24 x M5 Spring T-nuts (8 for mounting the two DIN rails, 4 for mounting the extrusion spacer; 4 for mounting the strut ball-joints to the back frame extrusion; 4 for mounting the strut front ball-joints to the two bed extrusions; 4 for mounting the deck panel to the bed extrusions)
 * 2 x M5 lock nuts (for mounting the strut back ball-joints to the joint plate, regular nuts should work as well)
 
-You will need to 3D print the following from [xbst's Bed Hinge github](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/xbst_/Bed_Hinge/STLs):
+You will need to 3D print an extrusion spacer from [xbst's Bed Hinge github](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/xbst_/Bed_Hinge/STLs):
 * Extrusion_Spacer.stl
-* Din_Rail_Mount.stl
 
 Optional:
 * 4 x M5x10 mm BHCS screws to mount a third DIN rail
@@ -163,8 +162,34 @@ You may need to use a drill and a 5.5mm drill bit to widen the ball-joint plate 
 &nbsp;<br/>
 &nbsp;<br/>
 
-* Mount DIN rails in the inverted fashion per [xbst's Bed Hinge Manual](https://github.com/VoronDesign/VoronUsers/blob/master/printer_mods/xbst_/Bed_Hinge/Manual.pdf).
- 
+* Mount the inverted DIN rails using 4 M5x16mm BHCS and 1 M3x8mm SHCS.
+<table>
+  <tr>
+    <td>
+  <figure>
+  <img src="Images/Inverted_DIN_mount.jpg" width="200">
+  &nbsp;<br/>
+  <figcaption align="center">Inverted DIN Mount Pre-Assembly</figcaption>
+  </figure>
+  </td>
+  <td>
+  <figure>
+  <img src="Images/Inverted_DIN_mount_installed.jpg" width="200">
+  &nbsp;<br/>
+  <figcaption align="center"Inverted DIN Mount Installed/figcaption>
+  </figure>
+  </td>
+  </tr>
+</table>
+---
+**NOTE**
+
+The inverted DIN mount is based on the Trident DIN mount design.
+
+---
+&nbsp;<br/>
+&nbsp;<br/>
+
 You are done with the installation.
 
 ### Optional:
@@ -176,3 +201,7 @@ You are done with the installation.
 gcode:
     G0 X50 Y0 Z270 F6000
 ```
+
+## Changelog
+
+2022-01-31: Added 3D-printed inverted DIN mount based on the Trident DIN mount design.
