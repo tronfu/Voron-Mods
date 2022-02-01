@@ -37,13 +37,16 @@ One nice thing about this version of the hinged bed is that the bed sits exactly
 * 4 x M5x6mm BHCS screws for mounting the strut front ball-joints to the bed extrusions.
 * 24 x M5 Spring T-nuts (8 for mounting the two DIN rails, 4 for mounting the extrusion spacer; 4 for mounting the strut ball-joints to the back frame extrusion; 4 for mounting the strut front ball-joints to the two bed extrusions; 4 for mounting the deck panel to the bed extrusions)
 * 2 x M5 lock nuts (for mounting the strut back ball-joints to the joint plate, regular nuts should work as well)
+* 8 x M5x16 mm BHCS screws to mount 2 DIN rails
+* 4 x M3x8mm SHCS screws to mount the 2 DIN rails
 
 You will need to 3D print an extrusion spacer from [xbst's Bed Hinge github](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/xbst_/Bed_Hinge/STLs):
 * Extrusion_Spacer.stl
 
 Optional:
-* 4 x M5x10 mm BHCS screws to mount a third DIN rail
+* 4 x M5x16 mm BHCS screws to mount a third DIN rail
 * 4 x M5 Spring T-nuts to mount a third DIN rail
+* 2 x M3x8mm SHCS screws to mount a third DIN rail
 * 2 x M5x3 mm BHCS screws to mount the bed handle
 * 2 x M5 Spring T-nuts to mount the bed handle
 
