@@ -162,7 +162,7 @@ You may need to use a drill and a 5.5mm drill bit to widen the ball-joint plate 
 &nbsp;<br/>
 &nbsp;<br/>
 
-* Mount the inverted DIN rails using 4 M5x16mm BHCS and 1 M3x8mm SHCS.
+* Mount the  DIN rails with the inverted DIN rail mounts using 4 M5x16mm BHCS and 1 M3x8mm SHCS.
 <table>
   <tr>
     <td>
