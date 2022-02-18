@@ -2,7 +2,7 @@
 
 <img src="Images/bowden_tube_clip_3d_render.png">
 
-I create a simple clip to keep the Bowden tube upright and not get caught in the moving chain or gantry.
+I created a simple clip to keep the Bowden tube upright and not get caught in the moving chain or the gantry.
 
 
 ## BOM
