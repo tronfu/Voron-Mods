@@ -303,10 +303,12 @@ variable_brush_depth:       10
 ```
 [calibrate_docklocation_z]
 #speed:                       50     # default 50
+##  the toolhead will start at docklocation_z_max and move down to
+##  docklocation_z_min to find the correct docklocation_z
 docklocation_z_max:          30
-docklocation_z_min:          8
-##  the magnet will pull the dock up when doing a find_servo_dock_z. 
-##  the servo_dock_z_offset will compensate for that by setting the servo_dock_z 
+docklocation_z_min:          8       
+##  The magnet will pull the dock up when doing a CALIBRATE_DOCKLOCATION_Z. 
+##  The docklocation_z_offset will compensate for that by setting the docklocation_z 
 ##  slightly lower
 docklocation_z_offset:       -2 
 
