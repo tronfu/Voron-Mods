@@ -1,6 +1,16 @@
 # A Servo-powered Retractable Dock for Klicky Probe and Nozzle Brush
+## for Voron 2.4 and Trident
 
-<img src="Images/servo_dock_and_brush.jpg">
+<table>
+  <tr>
+    <td>
+       <img src="Images/servo_dock_and_brush.jpg">
+    </td>
+    <td>
+      <img src="Images/trident_extended_dock_front_view.jpg">
+    </td>
+  </tr>
+</table>
 
 ## Background
 
@@ -47,7 +57,7 @@ You can certainly choose to use this design for only the Klick probe dock or onl
 ## BOM
 
 Common:
-* 1 x SG90 12g servo with metal gears, such as this one https://www.amazon.com/dp/B08YY9KLVV
+* 1 x SG90 12g analog servo with metal gears, such as this one https://www.amazon.com/gp/product/B07KYK9N1G/
 * 3 x 22-26 AWG wires at a length that can reach from the servo mounted by the print bed to your MCU
 * 1 x JST XH Connector Plug 3 Position (for connecting to MCU)
 * 1 x MicroFit3 Connector Receptacle 3 Position (for the other end of cable from MCU)
@@ -56,6 +66,12 @@ Common:
 * 2 x M5 Spring T-nuts (for mounting the housing to the extrusion)
 * 1 x M2x6mm screw (for securing the dock adaptor arm to the servo)
 
+---
+**NOTE**
+
+A digital servo would work also. But some digital servos may flutter during extension (i.e., rapid vibrating as it tries to find the precise angle). An analog servo does not have this problem.
+
+---
 Klicky probe dock:
 * 2 x M3x5mmx4mm heat inserts (for the dock adaptor arm)
 * 2 x M3x20mm screws (for securing the dock to the dock adaptor arm, the same two screws used in the stock fixed dock setup)
@@ -217,6 +233,7 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
 ### Final assembly
 * Install the servo into the housing using the two self-threading screws that come with the servo.
 <img src="Images/install_servo.jpg" width="400">
+<img src="Images/trident_extended_dock_side_view.jpg" width="400">
 
 * Install the impact shield by pushing it all the way into the housing.
 <img src="Images/install_impact_shield.jpg" width="400">
@@ -237,6 +254,7 @@ You should use a small dab of Loctite (I used the red variety) on the the M2 scr
 
 ---
 <img src="Images/fully_installed.jpg" width="400">
+<img src="Images/trident_extended_dock_front_view.jpg" width="400">
 
 ### Initial configuration
 * First, do a G28 to home everything.
@@ -278,3 +296,41 @@ variable_brush_depth:       10
 ``` 
 * Do a FIRMWARE_RESTART followed by a G28 to home everything
 * Do a cleaning_nozzle to see the brushing in action
+
+### Auto docklocation_z configuration
+* Copy the calibrate_docklocation_z.py script into the klipper/klippy/extras directory (e.g., on my set up the full path is /home/pi/klipper/klippy/extras).
+* Make sure you have the latest retractable_probe_dock.cfg that has the following configuration:
+```
+[calibrate_docklocation_z]
+#speed:                       50     # default 50
+docklocation_z_max:          30
+docklocation_z_min:          8
+##  the magnet will pull the dock up when doing a find_servo_dock_z. 
+##  the servo_dock_z_offset will compensate for that by setting the servo_dock_z 
+##  slightly lower
+docklocation_z_offset:       -2 
+
+[gcode_macro find_docklocation_z]
+gcode:
+    {% set docklocation_x = printer["gcode_macro _User_Variables"].docklocation_x %}
+    {% set docklocation_y = printer["gcode_macro _User_Variables"].docklocation_y %}
+    {% set dockmove_x = printer["gcode_macro _User_Variables"].dockmove_x|default(0) %}
+    {% set dockmove_y = printer["gcode_macro _User_Variables"].dockmove_y|default(0) %}
+    {% set release_feedrate = printer["gcode_macro _User_Variables"].release_feedrate|default(1000) %}
+    extend_probe_dock
+    CALIBRATE_DOCKLOCATION_Z X={docklocation_x} Y={docklocation_y}
+    G0 X{docklocation_x|int + dockmove_x|int} Y{docklocation_y|int + dockmove_y|int} F{release_feedrate}
+    { action_respond_info("find_sdocklocation_z: " + printer.calibrate_docklocation_z.docklocation_z|string) }
+    
+[gcode_macro set_docklocation_z]
+gcode:
+    SET_GCODE_VARIABLE MACRO=_User_Variables VARIABLE=docklocation_z VALUE={printer.calibrate_docklocation_z.docklocation_z}
+    { action_respond_info("set_docklocation_z: " + printer.calibrate_docklocation_z.docklocation_z|string) }
+    
+## Wrapper macro to get around Jinja expansion order issue
+[gcode_macro auto_set_docklocation_z]
+gcode:
+    find_docklocation_z
+    set_docklocation_z
+```
+* Call the auto_set_docklocation_z macro at least once after you restart your printer (including running RUNNING and FIRMWARE_RESTART commands) before any docking/undocking. For example, you can add auto_set_docklocation_z right after G28 in your G32 definition.
