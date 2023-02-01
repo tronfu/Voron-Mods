@@ -107,6 +107,7 @@ initial_angle: 175
 #   Initial pulse width time (in seconds) to set the servo to. (This
 #   is only valid if initial_angle is not set.) The default is to not
 #   send any signal at startup.
+```
 
 ### Wiring the servo to the MCU
 * Power off the printer.
@@ -114,8 +115,8 @@ initial_angle: 175
 <table>
   <tr>
     <td width="50%">
-<img src="Images/SKR_1.4.jpg" width="400">
-  </td>
+        <img src="Images/SKR_1.4.jpg" width="400">
+    </td>
   <td>
 The three pins from the servo port labeled GND, NPWR, and 2.0 should be connected to the Negative Pole (Brown), Positive Pole (Red), and Signal (Yellow) pins of the Micro Servo as shown in the picture below.
 <img src="Images/12g _Metal_Gear_Micro_Servo.jpg" width="400">
