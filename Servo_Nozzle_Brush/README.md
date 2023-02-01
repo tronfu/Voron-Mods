@@ -128,11 +128,6 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
 * Cut off the existing connector on the servo.
 * Crimp the MicroFit3 Connector Plug onto the servo wires.
 
-### Install the nozzle brush (skip if you are not using the Klicky probe dock feature)
-* Heat set the two heat inserts.
-<img src="Images/install_heat_inserts.jpg" width="400">
-
-* Install the probe dock using the two M3 screws (the same ones for the stock dock mount).
 
 ### Install the nozzle brush (skip if you are not using the nozzle brush feature)
 * Trim the nozzle brush so that it fits in the holder.
