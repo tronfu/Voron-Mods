@@ -11,7 +11,7 @@
 
 ## Background
 
-I was not quite content with how the fixed nozzle worked. The back and forth motion of the nozzle either did not get the plastic bits off or got them off in one direction but picked them back up on the way back. Also, while I really like the Klicky probe, I had trouble consistently docking and undocking with the fixed Klicky probe dock on my Voron 2.4 350. Docking and undocking would work for a few print cycles then dock became slightly too far back for the toolhead to reach. So I created this servo-powered retractable dock and nozzle brush combo.
+I was not quite content with how the fixed nozzle worked. The back and forth motion of the nozzle either did not get the plastic bits off or got them off in one direction but picked them back up on the way back. Also, after upgrading to TAP on my Voron 2.4 350, I had trouble getting the nozzle to reach fixed-position brushes. So I created this servo-powered nozzle brush based on my prior retractable Klicky probe dock.
 
 <table>
   <tr>
@@ -57,7 +57,7 @@ Common:
 * 1 x MicroFit3 Connector Plug 3 Position (replace existing connector on the servo)
 * 2 x M5x10mm BHCS screws  (for mounting the housing to the extrusion)
 * 2 x M5 Spring T-nuts (for mounting the housing to the extrusion)
-* 1 x M2x6mm screw (for securing the dock adaptor arm to the servo)
+* 1 x M2x6mm screw (for securing the servo adaptor arm to the servo)
 
 ---
 **NOTE**
@@ -143,13 +143,13 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
 
 * Put the two spring T-nuts in the extrusion and mount the housing to the extrusion (about 40 mm from the print bed on a V2.4 350). Don't tighten them too much. We will want to adjust the distance from the housing to the edge of the print bed.
 * Connect the servo to the wires from the MCU.
-* Power on the printer. If you have correctly inserted [servo probe_dock_servo] section into your printer.cfg, you should see the servo moving to the initial angle (e.g., 175 deg. in the sample setup) position up on boot up.
-* Type the following command in a terminal to Klipper (e.g., under Octoprint's terminal tab): retractable_probe_dock.
+* Power on the printer. If you have correctly inserted [servo arm] section into your printer.cfg, you should see the servo moving to the initial angle (e.g., 175 deg. in the sample setup) position up on boot up.
+* Type the following command in a terminal to Klipper (e.g., under Octoprint's terminal tab): retract_arm.
 (You should hear some clicking sound but the servo gear may not spin because it is at its initial angle position.)
 * Attach the white plastic wing that came with the servo to the top of the servo. You can just press it down but don't need to screw it in yet.
 <img src="Images/install_housing.jpg" width="400">
 
-* Put the dock adaptor arm over the white plastic wing, and secure the arm using a M2x6mm machine screw.
+* Put the servo adaptor arm over the white plastic wing, and secure the arm using a M2x6mm machine screw.
 ---
 **NOTE**
 
