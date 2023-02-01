@@ -58,6 +58,7 @@ Common:
 * 2 x M5x10mm BHCS screws  (for mounting the housing to the extrusion)
 * 2 x M5 Spring T-nuts (for mounting the housing to the extrusion)
 * 1 x M2x6mm screw (for securing the servo adaptor arm to the servo)
+* 1 x M3 Heat Insert, Optional (for tightening the brush in the brush holder)
 
 ---
 **NOTE**
@@ -135,6 +136,9 @@ The three pins from the servo port labeled GND, NPWR, and 2.0 should be connecte
 
 * Insert the trimmed brush into the holder.
 <img src="Images/brush_only.jpg" width="400">
+
+* Optional: Insert the heat insert into the holder, if you want to be able to tightening the fit of the brush in the holder.
+<img src="Images/optional_heat_insert.jpg" width="400">
 
 ### Final assembly
 * Install the servo into the housing using the two self-threading screws that come with the servo.
