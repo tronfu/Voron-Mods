@@ -1,7 +1,15 @@
 # Auto 3-Axes Calibration
 
-https://youtu.be/E4-BblkuyVQ
-https://youtu.be/gSlykigIngY
+<table>
+  <tr>
+    <td>
+       <a href="https://youtu.be/E4-BblkuyVQ" title="IDEX Auto 3-Axes Calibration (Bed Edges)"><img src="https://img.youtube.com/vi/E4-BblkuyVQ/0.jpg"></a>
+    </td>
+    <td>
+      <a href="https://youtu.be/gSlykigIngY" title="IDEX Auto 3-Axes Calibration (Calibration Tool)"><img src="https://img.youtube.com/vi/gSlykigIngY/0.jpg"></a>
+    </td>
+  </tr>
+</table>
 
 ## What it is
 This is a collection of Klipper modules and macros that will automatically find the x, y, and z offsets between tool head 1 (T1) and tool head 0 (T0) in an IDEX setup.
@@ -15,7 +23,7 @@ For the z offset calibration, there is nothing extra you need. But for the x and
 
 1. If you happen to use a build plate that is smaller than your aluminum bed, then you can use the edges of your build plate. If you go with this approach, then you will be using the left edge for your T0 nozzle probing and right edge for your T1 nozzle to calibrate the idex x offset. You will use the back edge for both T0 and T1 to calculate the y offset.
 
-![PEI Build Plate Bed Edge](Images/pei_bed_edge.jpg "PEI_Bed_Edge") 
+<img src="Images/pei_bed_edge.jpg" width="200">
 
 2. You can also use an object with clean edges to use as a calibration tool. Below are pictures of a calibration tool that I made from a 2mm-thick aluminum L bar.
 <table>
