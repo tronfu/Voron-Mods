@@ -12,12 +12,10 @@
 </table>
 
 ## What it is
-This is a collection of Klipper modules and macros that will automatically find the x, y, and z offsets between tool head 1 (T1) and tool head 0 (T0) in an IDEX setup.
+This is a collection of Klipper modules and macros that will automatically find the x, y, and z offsets between tool head 1 (T1) and tool head 0 (T0) in an IDEX setup. You can click on the videos above to see it in action.
 
 ## Requirements
 You need to to have double-tap installed. 
-
-**_NOTE:_**  JosAr, the creator has a made Unklicky adaptor that may work with this setup. But I have not tested it. The CAD is in the experimental directory.
 
 For the z offset calibration, there is nothing extra you need. But for the x and y offsets calibration, you need to have x-edge(s) and y-edge(s) that are reachable by both nozzles. Currently, I have tested the code with two approaches. 
 
