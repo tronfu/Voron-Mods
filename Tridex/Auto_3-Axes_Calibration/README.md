@@ -52,6 +52,9 @@ This is a slightly simplified version of what the code does. For the z offset is
 2. Copy idex_offsets_helpers.cfg into the same directory as your printer.cfg (or which ever directory you choose as long as you can include the idex_offsets_helpers.cfg from your printer.cfg)
 
 ### How to configure it
+
+**_NOTE:_**  You can find example full configuration files in the [Klipper_firmware](Klipper_firmware) directory.
+
 Edits to your printer.cfg:
 1. Add [include idex_offsets_helpers.cfg]
 2. Comment out or delete the [probe] section.
