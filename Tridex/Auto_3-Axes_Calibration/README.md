@@ -14,6 +14,12 @@
 ## What it is
 This is a collection of Klipper modules and macros that will automatically find the x, y, and z offsets between tool head 1 (T1) and tool head 0 (T0) in an IDEX setup. You can click on the videos above to see it in action.
 
+<img src="Images/dual_color_benchies.jpg" width="200">
+In the photo above, the left one is without any calibration, the middle is first version of the calibration code, and the right one is a more recent version.
+
+<img src="Images/moai.jpg" width="200">
+A dual color print after calibration.
+
 ## Requirements
 You need to to have double-tap installed. 
 
