@@ -60,7 +60,7 @@ Edits to your printer.cfg:
 2. Comment out or delete the [probe] section.
 2. Add [named_probe] sections. For example, on my Tridex set up. I have two named_probe sections: [named_probe tap1] and [named_probe tap0] 
 NOTE: Currently, due to the way Klipper parses the config file, the last [named_probe] in your printer.cfg is the initial/default probe. So you will want to list your probe attached to T0 last.
-3. Add a [idex_offsets_calibration] section. Below is an example taken from my printer.cfg.
+3. Add a [idex_offsets_calibration] section. The configuration parameters fall into four groups: offset_x related, offset_y related, offset_z related, and general. For the first three groups, the main concern is to specific the probe site. For the offset_z, picking a probe site anywhere on the bed reachable by both nozzles should work. But you probably want use somewhere near the middle of the bed where most of your printing takes place. For offset_x and offset_y probe sites, you want to pick a spot where it is about 5 mm away from the edge you are using. For example, if you want to use the left edge for T0 nozzle, then you can use 5 and move left towards the edge (presumably 0). Below is an example taken from my printer.cfg.
 
 ```
 [idex_offsets_calibration]
@@ -78,7 +78,7 @@ offset_x_step_size_t0:         0.50        ; how much to move each step initiall
 probe_differential_x:          0.1
 
 # probing left and right edges of the PEI sheet
-#offset_x_probe_site_t0_x:     0
+#offset_x_probe_site_t0_x:     5
 #offset_x_probe_site_t1_x:   245
 #offset_x_probe_site_y:      125
 #offset_x_probe_site_z:        0           ; default 0
