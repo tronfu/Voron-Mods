@@ -55,7 +55,13 @@ This is a slightly simplified version of what the code does. For the z offset is
 ## How to install it
 
 1. Copying named_probe.py, query_named_probe.py, and idex_offsets_calibration.py into klipper/klippy/extras directory.
+
 2. Copy idex_offsets_helpers.cfg into the same directory as your printer.cfg (or which ever directory you choose as long as you can include the idex_offsets_helpers.cfg from your printer.cfg)
+
+3. Configure your printer.cfg using the instructions from the "How to configure it" section below.
+
+4. Restart klipper either by rebooting the Raspberry Pi or issue `sudo service klipper restart` from the command line of the Pi.
+
 
 ### How to configure it
 
