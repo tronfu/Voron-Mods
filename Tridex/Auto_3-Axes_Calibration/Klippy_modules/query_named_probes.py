@@ -4,11 +4,11 @@
 # Copyright (C) 2023  Tron Fu <tron@riverwatcher.com>
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
-# Version: 1.0B1
+# Version: 1.0B2
 
 import logging
 from . import z_tilt
-import named_probe
+from . import named_probe
 
 class QueryNamedProbes:
     def __init__(self, config):

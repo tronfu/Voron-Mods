@@ -4,7 +4,7 @@
 # Copyright (C) 2023  Tron Fu <tron@riverwatcher.com>
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
-# Version: 1.0B1
+# Version: 1.0B2
 
 import logging
 import pins
@@ -13,9 +13,9 @@ import sys
 sys.path.append("..")
 from kinematics import hybrid_corexy
 import stepper
-from . import manual_probe
 import types
-import probe
+from . import manual_probe
+from . import probe
 
 HINT_TIMEOUT = """
 If the probe did not move far enough to trigger, then
