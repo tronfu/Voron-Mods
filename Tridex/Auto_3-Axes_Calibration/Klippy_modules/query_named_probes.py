@@ -7,7 +7,7 @@
 # Version: 1.0B1
 
 import logging
-import z_tilt
+from . import z_tilt
 import named_probe
 
 class QueryNamedProbes:
