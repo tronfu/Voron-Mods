@@ -4,7 +4,7 @@
 # Copyright (C) 2023  Tron Fu <tron@riverwatcher.com>
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
-# Version: 1.0B2
+# Version: 1.0B3
 
 import logging
 import pins
@@ -249,7 +249,12 @@ class NamedProbePointsHelper(probe.ProbePointsHelper):
             self.probe_points = probe_helper.probe_points
             self.name = probe_helper.name
             self.gcode = probe_helper.gcode
-            self.horizontal_move_z = probe_helper.horizontal_move_z
+            # Main branch
+            if callable(getattr(probe_helper, "default_horizontal_move_z", None)):
+                self.default_horizontal_move_z = probe_helper.default_horizontal_move_z
+            # IS FIX branch
+            if callable(getattr(probe_helper, "horizontal_move_z", None)):
+                self.horizontal_move_z = probe_helper.horizontal_move_z
             self.speed = probe_helper.speed
             self.use_offsets = probe_helper.use_offsets
             # Internal probing state
