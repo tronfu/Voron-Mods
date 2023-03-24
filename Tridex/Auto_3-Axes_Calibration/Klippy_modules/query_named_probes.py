@@ -4,10 +4,11 @@
 # Copyright (C) 2023  Tron Fu <tron@riverwatcher.com>
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
-# Version: 1.0B2
+# Version: 1.0B3
 
 import logging
 from . import z_tilt
+from . import quad_gantry_level
 from . import named_probe
 
 class QueryNamedProbes:
@@ -32,6 +33,9 @@ class QueryNamedProbes:
         z_tilt = self.printer.lookup_object("z_tilt", None)
         if z_tilt != None:
             z_tilt.probe_helper = named_probe.NamedProbePointsHelper(z_tilt.probe_helper, z_tilt.probe_finalize)
+        quad_gantry_level = self.printer.lookup_object("quad_gantry_level", None)
+        if quad_gantry_level != None:
+            quad_gantry_level.probe_helper = named_probe.NamedProbePointsHelper(quad_gantry_level.probe_helper, quad_gantry_level.probe_finalize)
     def register_probe(self, probe):
         self.probes[probe.name] = probe
         if probe.idex_carriage != None:
