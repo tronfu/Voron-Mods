@@ -4,7 +4,7 @@
 # Copyright (C) 2023  Tron Fu <tron@riverwatcher.com>
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
-# Version: 1.0B3
+# Version: 1.0B4
 
 import logging
 from . import z_tilt
@@ -36,6 +36,10 @@ class QueryNamedProbes:
         quad_gantry_level = self.printer.lookup_object("quad_gantry_level", None)
         if quad_gantry_level != None:
             quad_gantry_level.probe_helper = named_probe.NamedProbePointsHelper(quad_gantry_level.probe_helper, quad_gantry_level.probe_finalize)
+        bed_mesh = self.printer.lookup_object("bed_mesh", None)
+        if bed_mesh != None:
+            #logging.info("bed_mesh found")
+            bed_mesh.bmc.probe_helper = named_probe.NamedProbePointsHelper(bed_mesh.bmc.probe_helper, bed_mesh.bmc.probe_finalize)
     def register_probe(self, probe):
         self.probes[probe.name] = probe
         if probe.idex_carriage != None:
